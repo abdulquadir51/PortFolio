@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ Abdul Quadir — Portfolio
 
 A modern, responsive personal portfolio website built with **HTML5, CSS3, and JavaScript**.
@@ -101,3 +102,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Designed & built with ❤️ by **Abdul Quadir**
+=======
+# PortFolio
+Personal portfolio website showcasing my expertise in VLSI design, Circuit Analysis, and Power Engineering, along with projects and technical skills in modern electronics.
+>>>>>>> 6189d2c54d61c121ae8ad2beb8c1aac25007c86e
