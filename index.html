@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Quadir | Electronic and Electrical Engineer</title>
+    <meta name="description"
+        content="Portfolio of Abdul Quadir, a EEE student at LPU skilled in Industrial Automation, Hardware Development, Python.">
+    <meta name="keywords"
+        content="Abdul Quadir, Portfolio, Industrial Automation, PLC, Python, Machine Learning, CSE, LPU, Hardware">
+    <meta name="author" content="Abdul Quadir">
+    <meta property="og:title" content="Abdul Quadir | Portfolio">
+    <meta property="og:description"
+        content="Electronic and Electrical Engineering Student| Industrial Automation | Hardware Developer">
+
+    <!-- Bootstrap 5.2.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Geist+Mono:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- AOS 2.3.1 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand brand-pill" href="#home">
+                <span class="brand-text">A <span class="brand-accent">⚡</span>Q</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-light fs-5"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-1">
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#training">Training</a></li>
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link nav-pill" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <button id="theme-btn" class="btn theme-toggle-btn" aria-label="Toggle theme">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section position-relative overflow-hidden" id="home">
+        <div class="dot-overlay"></div>
+        <div class="hero-glow-blob hero-glow-1"></div>
+        <div class="hero-glow-blob hero-glow-2"></div>
+
+        <div class="container hero-container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row min-vh-100 py-5">
+                <!-- Text Column -->
+                <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right">
+                    <p class="hero-greeting font-mono mb-2">
+                        <i class="fas fa-hand-wave me-2 text-warning"></i>Hi there, I am
+                    </p>
+                    <h1 class="display-3 fw-bold hero-name mb-3">Abdul Quadir</h1>
+                    <h3 class="hero-role mb-4 font-mono">
+                        I'm a <span id="role-text" class="text-gradient-animated"></span>
+                    </h3>
+                    <p class="lead text-muted mb-5 hero-bio">
+                        Electrical & Electronics Engineering student specializing in VLSI design,
+                        with a strong foundation in circuit analysis, power systems, and semiconductor devices.
+                        Passionate about modern chip design and driven to develop innovative, efficient, and real-world
+                        electronic solutions.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+                        <a href="#projects" class="btn btn-gradient-primary px-5 py-3 rounded-pill fw-semibold"
+                            id="btn-view-work">
+                            <i class="fas fa-rocket me-2"></i>View Work
+                        </a>
+                        <a href="assest/Resume.pdf" download
+                            class="btn btn-outline-hero px-5 py-3 rounded-pill fw-semibold" id="btn-resume">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-4 justify-content-center justify-content-lg-start fs-5">
+                        <a href="https://github.com/abdulquadir51" target="_blank" class="social-link"
+                            aria-label="GitHub" id="hero-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdul-quadir5421" target="_blank" class="social-link"
+                            aria-label="LinkedIn" id="hero-linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:abdulquadir5421@gmail.com" class="social-link" aria-label="Email"
+                            id="hero-email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917906658618" class="social-link" aria-label="Phone" id="hero-phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-5 text-center mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="hero-img-wrapper">
+                        <div class="hero-img-ring"></div>
+                        <img src="assest/image.png"
+                            onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Abdul+Quadir&size=400&background=38BDF8&color=0B1120&bold=true'"
+                            alt="Abdul Quadir" class="hero-img" id="hero-profile-img">
+                        <div class="hero-badge hero-badge-1">
+                            <i class="fas fa-microchip text-primary me-1"></i>
+                            <span class="font-mono small"></span>
+                        </div>
+                        <div class="hero-badge hero-badge-2">
+                            <i class="fas fa-bolt text-warning me-1"></i>
+                            <span class="font-mono small"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="font-mono small text-muted me-2"></span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="py-5 position-relative" id="about">
+        <div class="about-glow"></div>
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">WHO AM I</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">About Me</span></h2>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Left: My Journey -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="glass-card p-4 p-lg-5 h-100 journey-card">
+                        <h3 class="h4 mb-4 font-mono text-primary d-flex align-items-center gap-2">
+                            <i class="fas fa-map-signs"></i> My Journey
+                        </h3>
+                        <p class="journey-text mb-4">
+                            My journey in <strong class="text-light">Electrical &amp; Electronics Engineering</strong>
+                            began with curiosity — understanding how
+                            <strong class="text-light">invisible currents</strong> and
+                            <strong class="text-light">silicon chips</strong> power the world around us.
+                        </p>
+                        <p class="journey-text mb-4">
+                            At <strong class="text-primary">Lovely Professional University</strong> (2023–Present),
+                            I have developed strong expertise in
+                            <strong class="text-light">Circuit Analysis</strong>,
+                            <strong class="text-light">Power Systems</strong>, and
+                            <strong class="text-light">Semiconductor Devices</strong>,
+                            while diving deeper into
+                            <strong class="text-light">VLSI design</strong> and
+                            <strong class="text-light">embedded technologies</strong>.
+                        </p>
+                        <p class="journey-text mb-4">
+                            From designing logic at the <strong class="text-light">chip level</strong> to simulating
+                            <strong class="text-light">industrial automation</strong> systems,
+                            I enjoy converting theoretical concepts into
+                            <strong class="text-light">working models</strong> and real-world applications.
+                        </p>
+                        <p class="journey-text mb-0">
+                            I am driven by one goal — to design
+                            <strong class="text-light">efficient, intelligent,
+                                and future-ready electronic systems</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Education Timeline -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="glass-card p-4 p-lg-5 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary d-flex align-items-center gap-2">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h3>
+                        <div class="timeline">
+                            <!-- B.Tech -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot bg-primary">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5 class="fw-bold text-light mb-1">Bachelor of Technology – EEE</h5>
+                                    <p class="text-primary font-mono small mb-1">Aug 2023 – Present</p>
+                                    <p class="text-muted mb-1">Lovely Professional University, Phagwara, Punjab</p>
+                                    <span class="score-badge">
+                                        <i class="fas fa-star text-warning me-1"></i> CGPA: 6.90
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Intermediate -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot bg-teal">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5 class="fw-bold text-light mb-1">Intermediate (PCM) – Class XII</h5>
+                                    <p class="text-primary font-mono small mb-1">Apr 2019 – May 2021</p>
+                                    <p class="text-muted mb-1">Aligarh Modern School, Aligarh, UP</p>
+                                    <span class="score-badge">
+                                        <i class="fas fa-percent text-info me-1"></i> 75%
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Matriculation -->
+                            <div class="timeline-item last">
+                                <div class="timeline-dot bg-info">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5 class="fw-bold text-light mb-1">Matriculation – Class X</h5>
+                                    <p class="text-primary font-mono small mb-1">Apr 2018 – May 2019</p>
+                                    <p class="text-muted mb-1">Aligarh Modern School, Aligarh, UP</p>
+                                    <span class="score-badge">
+                                        <i class="fas fa-percent text-info me-1"></i> 70%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="py-5 skills-section" id="skills">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">WHAT I KNOW</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">Technical Skills</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Programming Languages -->
+                <div class="col-12" data-aos="fade-up" data-aos-delay="50">
+                    <div class="glass-card p-4">
+                        <h3 class="h5 skill-cat-title skill-cat-blue mb-4">
+                            <i class="fas fa-code me-2"></i>Programming Languages
+                        </h3>
+                        <div class="skill-grid">
+                            <div class="skill-chip"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                            <div class="skill-chip"><i class="devicon-cplusplus-plain colored"></i><span>C++</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering & Design Tools -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 h-100">
+                        <h3 class="h5 skill-cat-title skill-cat-teal mb-4">
+                            <i class="fas fa-drafting-compass me-2"></i>Engineering &amp; Design Tools
+                        </h3>
+                        <div class="skill-grid">
+                            <div class="skill-chip"><i class="fas fa-ruler-combined text-info"></i><span>AutoCAD</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-matlab-plain colored"></i><span>MATLAB</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-wave-square text-teal"></i><span>Simulink</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-cube text-warning"></i><span>PTC Creo</span></div>
+                            <div class="skill-chip"><i class="fas fa-lightbulb text-yellow"></i><span>TinkerCAD</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-microchip text-primary"></i><span>Cadence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation & Embedded -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="glass-card p-4 h-100">
+                        <h3 class="h5 skill-cat-title skill-cat-purple mb-4">
+                            <i class="fas fa-industry me-2"></i>Automation &amp; Embedded Systems
+                        </h3>
+                        <div class="skill-grid">
+                            <div class="skill-chip"><i class="fas fa-network-wired text-purple"></i><span>LogixPro
+                                    500</span></div>
+                            <div class="skill-chip"><i class="fas fa-project-diagram text-info"></i><span>Ladder
+                                    Logic</span></div>
+                            <div class="skill-chip"><i class="fas fa-microchip text-success"></i><span>Keil
+                                    uVision</span></div>
+                            <div class="skill-chip"><i class="fas fa-cogs text-warning"></i><span>PLC Programming</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-bolt text-danger"></i><span>Porteous</span></div>
+                            <div class="skill-chip"><i class="fas fa-broadcast-tower text-secondary"></i><span>Arduino /
+                                    MCU</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="h4 text-center fw-bold mb-4"><span class="text-gradient">Soft Skills</span></h3>
+                <div class="glass-card p-4 text-center">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="soft-skill-pill"><i class="fas fa-lightbulb me-2 text-warning"></i>Problem
+                            Solving</span>
+                        <span class="soft-skill-pill"><i class="fas fa-users me-2 text-success"></i>Team Player</span>
+                        <span class="soft-skill-pill"><i class="fas fa-tasks me-2 text-info"></i>Project
+                            Management</span>
+                        <span class="soft-skill-pill"><i
+                                class="fas fa-sync-alt me-2 text-primary"></i>Adaptability</span>
+                        <span class="soft-skill-pill"><i class="fas fa-palette me-2 text-danger"></i>Creative
+                            Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="py-5" id="projects">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">WHAT I'VE BUILT</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">Featured Projects</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1: Solar Tracking System -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card project-card h-100 d-flex flex-column box-primary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-2">Solar Tracking System</h3>
+                                    <span class="date-badge badge-primary-soft">Nov '23</span>
+                                </div>
+                                <div class="project-icon-wrap text-warning">
+                                    <i class="fas fa-solar-panel fa-lg"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-3">
+                                Hardware-based solar tracking system that auto-adjusts panel orientation for maximum
+                                energy capture.
+                            </p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <strong>Auto-Orientation:</strong> Adjusts panel position based on real-time
+                                    sunlight intensity sensors to improve energy capture efficiency.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <strong>Hardware Integration:</strong> Sensors, microcontroller (Arduino/PLC) &amp;
+                                    motor drivers enable continuous real-time tracking.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <strong>Safety &amp; Reliability:</strong> Control logic and safety measures handle
+                                    varying environmental conditions.
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="tech-badge">Arduino / PLC</span>
+                                <span class="tech-badge">C</span>
+                                <span class="tech-badge">Sensors</span>
+                                <span class="tech-badge">Motor Driver</span>
+                                <span class="tech-badge">Hardware</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 d-flex gap-2">
+                            <a href="https://github.com/abdulquadir51" target="_blank"
+                                class="btn btn-sm btn-outline-primary flex-fill" id="proj1-code">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                            <span class="btn btn-sm btn-primary flex-fill disabled opacity-50" id="proj1-demo">
+                                <i class="fas fa-microchip me-1"></i>Hardware Build
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Automatic Water Heater -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card project-card h-100 d-flex flex-column box-secondary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-2">Automatic Water Heater</h3>
+                                    <span class="date-badge badge-teal-soft">Apr '24</span>
+                                </div>
+                                <div class="project-icon-wrap text-secondary">
+                                    <i class="fas fa-thermometer-half fa-lg"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-3">
+                                Smart water heating system with temperature-based automated control for efficient energy
+                                usage.
+                            </p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-secondary me-2"></i>
+                                    <strong>Temperature Control:</strong> Automated heating maintains water at desired
+                                    temperature levels using sensor feedback.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-secondary me-2"></i>
+                                    <strong>Smart Automation:</strong> Sensors, microcontroller, and relays work
+                                    together to automate the full heating cycle.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-secondary me-2"></i>
+                                    <strong>Safety System:</strong> Automatic cut-off and overheat protection ensure
+                                    reliable and secure operation.
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="tech-badge">Microcontroller</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Relay Module</span>
+                                <span class="tech-badge">Temp Sensor</span>
+                                <span class="tech-badge">Hardware</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 d-flex gap-2">
+                            <a href="https://github.com/abdulquadir51" target="_blank"
+                                class="btn btn-sm btn-outline-secondary flex-fill" id="proj2-code">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                            <span class="btn btn-sm btn-secondary flex-fill disabled opacity-50" id="proj2-demo">
+                                <i class="fas fa-microchip me-1"></i>Hardware Build
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: CNC Plasma Table Simulation -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card project-card h-100 d-flex flex-column box-info">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-2">CNC Plasma Table Simulation</h3>
+                                    <span class="date-badge badge-info-soft">Jul '25</span>
+                                </div>
+                                <div class="project-icon-wrap text-info">
+                                    <i class="fas fa-draw-polygon fa-lg"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-3">
+                                Industrial-grade CNC plasma cutting table simulation built with Ladder Logic in LogixPro
+                                500.
+                            </p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-info me-2"></i>
+                                    <strong>Full PLC Simulation:</strong> Programmed motion control, interlocks, and
+                                    safety routines demonstrating industrial automation knowledge.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-info me-2"></i>
+                                    <strong>Precision Logic:</strong> Ladder Logic sequences coordinate cutting
+                                    operations with precision and reliability.
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-info me-2"></i>
+                                    <strong>Real-World Replication:</strong> Timers, counters &amp; conditional logic
+                                    replicate real CNC automation in a virtual environment.
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="tech-badge">LogixPro 500</span>
+                                <span class="tech-badge">Ladder Logic</span>
+                                <span class="tech-badge">PLC</span>
+                                <span class="tech-badge">Industrial Automation</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 d-flex gap-2">
+                            <a href="https://github.com/abdulquadir51" target="_blank"
+                                class="btn btn-sm btn-outline-info flex-fill" id="proj3-code">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                            <span class="btn btn-sm btn-info flex-fill disabled opacity-50" id="proj3-demo">
+                                <i class="fas fa-industry me-1"></i>Simulation
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRAINING SECTION ==================== -->
+    <section class="py-5 certifications-section" id="training">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">HANDS-ON EXPERIENCE</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">Training</span></h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 p-lg-5 box-primary" style="text-align: left;">
+                        <!-- Header -->
+                        <div class="d-flex flex-wrap justify-content-between align-items-start mb-4 gap-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="cert-icon-wrap text-primary">
+                                    <i class="fas fa-industry fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h4 fw-bold mb-1">Mastering PLCs For Industrial Automation</h3>
+                                    <p class="text-muted mb-0 font-mono small">Lovely Professional University</p>
+                                </div>
+                            </div>
+                            <span class="date-badge badge-primary-soft align-self-center">Jul '23</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="text-muted mb-4" style="line-height: 1.8;">
+                            Comprehensive hands-on training in <strong class="text-light">PLC programming</strong>
+                            and <strong class="text-light">industrial automation</strong>, covering real-world
+                            control system design, safety protocols, and embedded electronics.
+                        </p>
+
+                        <!-- Bullet Points -->
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                <p class="mb-0 text-muted" style="text-align: left;">Programmed industrial automation
+                                    processes in <strong class="text-light">LogixPro 500</strong> using <strong
+                                        class="text-light">Ladder Logic</strong>, incorporating timers, counters, and
+                                    interlocks to model conveyor systems, bottling lines, and traffic control
+                                    simulations.</p>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                <p class="mb-0 text-muted" style="text-align: left;">Implemented <strong
+                                        class="text-light">safety
+                                        interlocks</strong> and emergency stop routines to ensure compliance with
+                                    industrial safety standards and risk-aware control design.</p>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                <p class="mb-0 text-muted" style="text-align: left;">Designed and tested <strong
+                                        class="text-light">embedded circuits</strong> interfacing
+                                    microcontrollers with sensors, relays, and actuators for real-time
+                                    automation and control applications.</p>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                <p class="mb-0 text-muted" style="text-align: left;">Performed <strong
+                                        class="text-light">circuit simulation</strong> and analysis using
+                                    <strong class="text-light">MATLAB/Simulink</strong>, validating control
+                                    system designs before hardware implementation.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <!-- Tech Badges -->
+                        <div class="mt-4 d-flex flex-wrap gap-2">
+                            <span class="tech-badge">LogixPro 500</span>
+                            <span class="tech-badge">Ladder Logic</span>
+                            <span class="tech-badge">PLC</span>
+                            <span class="tech-badge">MATLAB/Simulink</span>
+                            <span class="tech-badge">Embedded Systems</span>
+                            <span class="tech-badge">Industrial Automation</span>
+                        </div>
+
+                        <!-- Certificate Link -->
+                        <div class="mt-4">
+                            <a href="https://files.lpu.in/umsweb/skilldevcourse/SkillDevelopmentCertificates/12320822_879_14_08_2025.pdf?_gl=1*dbrevy*_gcl_au*MTQxNjYzODUxMS4xNzcxOTU1MTc4"
+                                target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-4">
+                                <i class="fas fa-certificate me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section class="py-5" id="certifications">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">CREDENTIALS</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">Certifications</span></h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Cert 1: Electric Vehicle -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="glass-card cert-card h-100 d-flex flex-column box-warning">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="cert-icon-wrap text-warning">
+                                    <i class="fas fa-car-battery fa-2x"></i>
+                                </div>
+                                <span class="date-badge badge-warning-soft">Oct '23</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1">Learning of Electric Vehicle</h3>
+                            <p class="text-muted small mb-0">Udemy</p>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <a href="https://www.udemy.com/certificate/UC-32148d6e-0a0e-4e78-b3dd-373b601c8e8e/"
+                                target="_blank" class="btn btn-sm btn-outline-warning w-100" id="cert1-verify">
+                                Verify Credential <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Basics of Python -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="glass-card cert-card h-100 d-flex flex-column box-primary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="cert-icon-wrap text-primary">
+                                    <i class="devicon-python-plain fa-2x colored" style="font-size:2rem"></i>
+                                </div>
+                                <span class="date-badge badge-primary-soft">Nov '23</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1">Basics of Python</h3>
+                            <p class="text-muted small mb-0">Scaler</p>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <a href="https://www.scaler.com" target="_blank"
+                                class="btn btn-sm btn-outline-primary w-100" id="cert2-verify">
+                                Verify Credential <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Hackathon -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="glass-card cert-card h-100 d-flex flex-column box-secondary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="cert-icon-wrap text-secondary">
+                                    <i class="fas fa-trophy fa-2x"></i>
+                                </div>
+                                <span class="date-badge badge-teal-soft">Apr '25</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1">Hackathon Participant</h3>
+                            <p class="text-muted small mb-0">Lovely Professional University</p>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <a href="https://www.lpu.in" target="_blank" class="btn btn-sm btn-outline-secondary w-100"
+                                id="cert3-verify">
+                                View Certificate <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4: PCB Design with KiCad -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="glass-card cert-card h-100 d-flex flex-column box-teal">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="cert-icon-wrap text-info">
+                                    <i class="fas fa-circuit-board fa-2x"></i>
+                                </div>
+                                <span class="date-badge badge-teal-soft">Jan '26</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1">PCB Design with KiCad 9</h3>
+                            <p class="text-muted small mb-0">Udemy &bull; 32 hours</p>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <a href="https://www.udemy.com/certificate/UC-18255e9c-f35a-4956-a061-32f3bf62e8bf/"
+                                target="_blank" class="btn btn-sm btn-outline-info w-100" id="cert4-verify">
+                                Verify Credential <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="py-5 contact-section" id="contact">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label font-mono">LET'S TALK</span>
+                <h2 class="display-5 fw-bold mt-2"><span class="text-gradient">Get In Touch</span></h2>
+                <p class="text-muted mt-3 mx-auto" style="max-width:600px;">
+                    Open to opportunities, collaborations, and new ideas. Feel free to reach out!
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                    <div class="glass-card p-4 p-lg-5 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Contact Info</h3>
+
+                        <div class="d-flex flex-column gap-4 mb-5">
+                            <div class="contact-item">
+                                <div class="contact-icon-wrap text-primary">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Email</h6>
+                                    <a href="mailto:abdulquadir5421@gmail.com"
+                                        class="text-muted text-decoration-none small">abdulquadir5421@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon-wrap text-primary">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Phone</h6>
+                                    <a href="tel:+917906658618" class="text-muted text-decoration-none small">+91 79066
+                                        58618</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon-wrap text-primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Location</h6>
+                                    <p class="text-muted mb-0 small">Phagwara, Punjab, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon-wrap text-primary">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">LinkedIn</h6>
+                                    <a href="https://www.linkedin.com/in/abdul-quadir5421" target="_blank"
+                                        class="text-muted text-decoration-none small">linkedin.com/in/abdul-quadir5421</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top border-secondary border-opacity-25 pt-4">
+                            <h6 class="mb-3 fw-semibold">Connect With Me</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/abdulquadir51" target="_blank" class="social-btn"
+                                    id="contact-github" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/abdul-quadir5421" target="_blank"
+                                    class="social-btn" id="contact-linkedin" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:abdulquadir5421@gmail.com" class="social-btn" id="contact-mail"
+                                    aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="glass-card p-4 p-lg-5 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Send a Message</h3>
+
+                        <div id="form-success" class="alert alert-success d-none" role="alert">
+                            <i class="fas fa-check-circle me-2"></i> Message sent successfully! I'll get back to you
+                            soon.
+                        </div>
+                        <div id="form-error" class="alert alert-danger d-none" role="alert">
+                            <i class="fas fa-exclamation-circle me-2"></i> Something went wrong. Please try again or
+                            email me directly.
+                        </div>
+
+                        <form action="https://formsubmit.co/abdulquadir5421@gmail.com" method="POST" id="contact-form">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject"
+                                value="New Portfolio Contact from Abdul Quadir's Portfolio!">
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control custom-input" id="contact-name"
+                                            name="name" placeholder="Your Name" required>
+                                        <label for="contact-name"></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control custom-input" id="contact-email"
+                                            name="email" placeholder="Your Email" required>
+                                        <label for="contact-email"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control custom-input" id="contact-subject"
+                                            name="subject" placeholder="Subject" required>
+                                        <label for="contact-subject"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control custom-input" id="contact-message" name="message"
+                                            placeholder="Message" style="height:160px" required></textarea>
+                                        <label for="contact-message"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-gradient-primary w-100 py-3 fw-semibold"
+                                        id="submit-btn">
+                                        <span id="btn-text"><i class="fas fa-paper-plane me-2"></i>Send Message</span>
+                                        <span id="btn-spinner" class="d-none">
+                                            <span class="spinner-border spinner-border-sm me-2"
+                                                role="status"></span>Sending...
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-4 mb-3 fs-5">
+                <a href="https://github.com/abdulquadir51" target="_blank" class="footer-social-link"
+                    aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdul-quadir5421" target="_blank" class="footer-social-link"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:abdulquadir5421@gmail.com" class="footer-social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="tel:+917906658618" class="footer-social-link" aria-label="Phone"><i
+                        class="fas fa-phone"></i></a>
+            </div>
+            <p class="text-muted small mb-1">
+                &copy; <span id="footer-year"></span> Abdul Quadir. All rights reserved.
+            </p>
+            <p class="text-muted small mb-0" style="opacity: 0.6;">
+                Design inspired by <a href="https://github.com/abdulquadir51" target="_blank"
+                    class="text-decoration-none" style="color: var(--accent-blue);">Abdul Quadir</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
